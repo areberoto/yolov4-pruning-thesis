@@ -1,3 +1,17 @@
+# About this repository
+
+This repository should have been forked from https://github.com/tanluren/yolov3-channel-and-layer-pruning, but at the time I started working on this project I was a beginner using git, thus I didn't to that. Since all my work was already done on this cloned repository, I decided to push it to this personal repository.
+
+
+
+## Weights files:
+
+Original YOLOv4 weights can be downloaded from: [YOLOv4 original weights](https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.weights)
+
+Pruned and non-pruned YOLOv4-DPU weights can be downloaded from: [YOLOv4-DPU weights](
+
+
+
 # yolov3-channel-and-layer-pruning
 本项目以[ultralytics/yolov3](https://github.com/ultralytics/yolov3)为基础实现，根据论文[Learning Efficient Convolutional Networks Through Network Slimming (ICCV 2017)](http://openaccess.thecvf.com/content_iccv_2017/html/Liu_Learning_Efficient_Convolutional_ICCV_2017_paper.html)原理基于bn层Gmma系数进行通道剪枝，下面引用了几种不同的通道剪枝策略，并对原策略进行了改进，提高了剪枝率和精度；在这些工作基础上，又衍生出了层剪枝，本身通道剪枝已经大大减小了模型参数和计算量，降低了模型对资源的占用，而层剪枝可以进一步减小了计算量，并大大提高了模型推理速度；通过层剪枝和通道剪枝结合，可以压缩模型的深度和宽度，某种意义上实现了针对不同数据集的小模型搜索。<br>
 <br>
