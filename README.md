@@ -8,7 +8,7 @@ This repository should have been forked from https://github.com/tanluren/yolov3-
 
 Original YOLOv4 weights can be downloaded from: [YOLOv4 original weights](https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.weights)
 
-Pruned and non-pruned YOLOv4-DPU weights can be downloaded from: [YOLOv4-DPU weights](
+Pruned and non-pruned YOLOv4-DPU weights can be downloaded from: [YOLOv4-DPU weights](https://drive.google.com/drive/folders/1dtZWbtMO89Y37EDGsQskwmRva2rOpUS4?usp=sharing)
 
 
 
