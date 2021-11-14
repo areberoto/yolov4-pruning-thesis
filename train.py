@@ -10,7 +10,6 @@ from utils.datasets import *
 from utils.utils import *
 from utils.prune_utils import *
 
-
 mixed_precision = True
 try:  # Mixed precision training https://github.com/NVIDIA/apex
     from apex import amp

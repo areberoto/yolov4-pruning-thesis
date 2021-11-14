@@ -43,7 +43,7 @@ def create_modules(module_defs, img_size, arc):
             kernel_size = int(mdef['size'])
             stride = int(mdef['stride'])
             maxpool = nn.MaxPool2d(kernel_size=kernel_size, stride=stride, padding=int((kernel_size - 1) // 2))
-            if kernel_size == 2 and stride == 1:  # yolov3-tiny
+            if (kernel_size == 2 or kernel_size == 6 or kernel_size == 8) and stride == 1:  # yolov3-tiny
                 modules.add_module('ZeroPad2d', nn.ZeroPad2d((0, 1, 0, 1)))
                 modules.add_module('MaxPool2d', maxpool)
             else:
